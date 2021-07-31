@@ -1,0 +1,164 @@
+/*
+   tabSlideOUt v2.4
+   By  Michael Fielding
+   License: GPL v3.0
+*/
+
+#my-tab1 {
+   z-index: 10;
+}
+
+#insta {
+   background-color: #d83d3f !important;
+}
+
+#insta:hover {
+   background-color: #a61b1d !important;
+}
+
+#fb {
+   background-color: #5779c4 !important;
+}
+
+#fb:hover {
+   background-color: #3557a2 !important;
+}
+
+@media screen and (max-width: 768px) {
+   #insta {
+      display: none;
+   }
+
+   #fb {
+      display: none;
+   }
+}
+
+.ui-slideouttab-panel,
+.ui-slideouttab-handle {
+   background-color: white;
+   padding: 0.4em;
+   padding-top: 0px;
+   padding-bottom: 0px;
+   box-sizing: border-box;
+}
+
+.ui-slideouttab-panel {
+   display: block;
+   position: fixed;
+   border: 3px solid gray;
+}
+
+/* This class is added after the tabs are initialised, otherwise the user sees the 
+   tabs slide out of the way when the page is initialised. */
+.ui-slideouttab-ready {
+   transition: transform 0.5s ease 0s;
+}
+
+/* Hide tabs and panels when printed. */
+@media print {
+   .ui-slideouttab-panel {
+      display: none;
+   }
+}
+
+/* Tab handles */
+.ui-slideouttab-handle {
+   display: block;
+   position: absolute;
+   cursor: pointer;
+   font-size: 18px;
+   color: white;
+   background-color: gray;
+   width: 120px;
+   text-align: center;
+}
+
+.ui-slideouttab-handle-image {
+   transform: rotate(0);
+}
+
+/* Right */
+.ui-slideouttab-right {
+   right: -1px;
+   transform: translateX(100%);
+   border-right: none;
+}
+
+.ui-slideouttab-right.ui-slideouttab-open {
+   transform: translateX(0%);
+}
+
+.ui-slideouttab-right .ui-slideouttab-handle {
+   transform-origin: 0% 0%;
+   transform: rotate(-90deg) translate(-100%, -100%);
+}
+
+.ui-slideouttab-right .ui-slideouttab-handle-reverse {
+   transform-origin: 0% 100%;
+   transform: rotate(-90deg);
+}
+
+/* Left */
+.ui-slideouttab-left {
+   left: -1px;
+   transform: translateX(-100%);
+   border-left: none;
+}
+
+.ui-slideouttab-left.ui-slideouttab-open {
+   transform: translateX(0%);
+}
+
+.ui-slideouttab-left .ui-slideouttab-handle {
+   transform-origin: 100% 0%;
+   transform: rotate(-90deg);
+}
+
+.ui-slideouttab-left .ui-slideouttab-handle-reverse {
+   transform-origin: 100% 100%;
+   transform: rotate(-90deg) translate(100%, 100%);
+}
+
+/* Top */
+.ui-slideouttab-top {
+   top: 0px;
+   transform: translateY(-100%);
+   border-top: none;
+}
+
+.ui-slideouttab-top.ui-slideouttab-open {
+   transform: translateY(0%);
+}
+
+/* Bottom */
+.ui-slideouttab-bottom {
+   bottom: 0px;
+   transform: translateY(100%);
+   border-bottom: none;
+}
+
+.ui-slideouttab-bottom.ui-slideouttab-open {
+   transform: translateY(0%);
+}
+
+/* turn font awesome icon in a tab upright */
+.ui-slideouttab-left .ui-slideouttab-handle > .fa-icon,
+.ui-slideouttab-right .ui-slideouttab-handle > .fa-icon {
+   transform: rotate(90deg);
+}
+
+.ui-slideouttab-handle > .fa-icon {
+   margin-left: 0.5em;
+}
+
+/* apply rounded corners if handle has the -rounded class */
+.ui-slideouttab-top .ui-slideouttab-handle-rounded,
+.ui-slideouttab-left .ui-slideouttab-handle-rounded {
+   border-radius: 0 0 4px 4px;
+}
+
+.ui-slideouttab-right .ui-slideouttab-handle-rounded,
+.ui-slideouttab-bottom .ui-slideouttab-handle-rounded {
+   border-radius: 4px 4px 0 0;
+}

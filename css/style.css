@@ -1,0 +1,883 @@
+body {
+   color: #333333;
+   background: #ffffff;
+   font-family: 'Lato', sans-serif;
+   font-size: 1.2rem;
+   margin: 0;
+   padding: 0;
+}
+
+a {
+   transition: all 0.5s;
+}
+
+img {
+   object-fit: cover;
+   transition: all 0.5s;
+}
+
+ul,
+ol {
+   color: #555555;
+   margin: 0;
+   padding: 0;
+}
+
+input,
+button,
+select,
+textarea {
+   color: #555555;
+   border: 1px solid #d3d3d3;
+   border-radius: 0.2rem;
+}
+
+label {
+   color: #555555;
+   margin: 0;
+}
+
+table {
+   color: #555555;
+   border-collapse: separate;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+caption {
+   color: #555555;
+   caption-side: top;
+   text-align: center;
+}
+
+.std h1 {
+   font-size: 3.5rem;
+   font-weight: 700;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+}
+
+.std h2 {
+   font-size: 1.7rem;
+   font-weight: 700;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+}
+
+.std h3 {
+   font-size: 1.6rem;
+}
+
+.std h4 {
+   font-size: 1.5rem;
+}
+
+.std h5 {
+   font-size: 1.5rem;
+   color: #555555;
+}
+
+.std p {
+   font-size: 1.2rem;
+   color: #555555;
+}
+
+.small h1 {
+   font-size: 2.4rem;
+}
+
+.small h3 {
+   font-size: 1.4rem;
+}
+
+.content ul,
+.content ol {
+   font-size: 1.2rem;
+   margin-bottom: 1rem;
+   margin-left: 1rem;
+   padding-left: 1rem;
+}
+
+.aside ul,
+.aside ol {
+   list-style: none;
+}
+
+.navbar {
+   background: #f8f8f8;
+   padding: 0;
+}
+
+.navbar-brand {
+   font-size: 1.2rem;
+   font-weight: 700;
+   text-transform: uppercase;
+   color: #444444 !important;
+   cursor: pointer;
+}
+
+.nav-link {
+   font-size: 1.2rem;
+   font-weight: 700;
+   text-transform: uppercase;
+   color: #444444 !important;
+   cursor: pointer;
+}
+
+.nav-link:hover {
+   background: #d3d3d3;
+}
+
+.navbar-nav .nav-link {
+   padding: 1.5rem 0.5rem;
+}
+
+.dropdown-menu {
+   background: #f8f8f8;
+   min-width: 0;
+   padding: 0;
+}
+
+.dropdown-item {
+   font-size: 1rem;
+   font-weight: 700;
+   text-transform: uppercase;
+   color: #444444 !important;
+   padding: 0.5rem 1.5rem;
+}
+
+.dropdown-item:hover {
+   background: #d3d3d3;
+}
+
+.dropdown-item:active {
+   background: inherit;
+   color: inherit;
+}
+
+.search-submit {
+   background: #d3d3d3;
+}
+
+.btn-primary:hover,
+.btn-outline-primary:hover {
+   color: white !important;
+}
+
+.btn-primary,
+.btn-outline-primary {
+   box-shadow: none !important;
+}
+
+.btn {
+   cursor: pointer;
+}
+
+.text {
+   text-align: justify;
+}
+
+.hero {
+   background: #f5f5f5;
+}
+
+.gray {
+   background: #f5f5f5;
+}
+
+.iconboxes i {
+   font-size: 2rem;
+   color: #576f9e;
+}
+
+.slider ol {
+   list-style: none;
+}
+
+.slider-indicators {
+   margin: 0 1rem;
+   padding: 0 1rem;
+   list-style: none;
+}
+
+.slider-inner {
+   background: #777777;
+}
+
+.slider-caption {
+   top: 22%;
+}
+
+.slider-item {
+   height: 37rem;
+}
+
+.slider-item img {
+   opacity: 0.2;
+}
+
+.image img:hover {
+   transform: scale(1.1);
+}
+
+.image {
+   overflow: hidden;
+}
+
+.short {
+   height: 25rem;
+}
+
+.commentlist {
+   text-align: justify;
+}
+
+.commentlist li {
+   background: #ffffff;
+   border: solid #d3d3d3 1px;
+   border-bottom: none;
+}
+
+.commentlist li:last-child,
+.commentlist .children li:last-child {
+   border-bottom: solid #d3d3d3 1px;
+}
+
+.commentlist li.odd {
+   background: #f5f5f5;
+}
+
+.commentlist .children {
+   margin-left: 1rem;
+   padding: 1rem;
+}
+
+.commentlist .comment .fn {
+   font-size: 1.2rem;
+}
+
+.commentlist .comment .reply {
+   font-size: 1rem;
+   text-align: right;
+}
+
+.commentlist .avatar {
+   float: left;
+   margin-right: 1rem;
+}
+
+.commentlist .comment-meta {
+   font-size: 0.8rem;
+}
+
+.commentlist .comment-body {
+   padding: 1rem;
+}
+
+.commentlist .comment-respond {
+   padding: 1rem;
+   text-align: center;
+}
+
+.aligncenter .blocks-gallery-grid {
+   margin-left: auto;
+   margin-right: auto;
+   padding: 0;
+}
+
+.select2-selection--single,
+.select2-search__field,
+.select2-dropdown {
+   color: #555555 !important;
+   border-color: #d3d3d3 !important;
+   border-radius: 0.2rem !important;
+}
+
+.select2-selection__rendered {
+   line-height: 25px !important;
+   color: #555555 !important;
+}
+
+.select2 .input-text {
+   padding: inherit;
+}
+
+.wpcf7-not-valid-tip {
+   color: #555555 !important;
+}
+
+.wpcf7-response-output {
+   color: #555555 !important;
+   border: none !important;
+   margin: 0 !important;
+   padding: 0 !important;
+}
+
+.fb_dialog {
+   left: 15px !important;
+   right: 0 !important;
+   bottom: 18px !important;
+}
+
+.fb_customer_chat_bounce_in_v2 {
+   left: 5px !important;
+   right: 0 !important;
+   bottom: 80px !important;
+}
+
+.fb_customer_chat_bounce_out_v2 {
+   left: 5px !important;
+   right: 0 !important;
+   bottom: 80px !important;
+}
+
+.woocommerce .page-title,
+.woocommerce .entry-title {
+   font-size: 1.7rem;
+   margin-top: 1rem;
+   margin-bottom: 1rem;
+}
+
+.woocommerce .button,
+.woocommerce .submit {
+   color: #555555 !important;
+   background: #d3d3d3 !important;
+   border-radius: 100px !important;
+   padding: 0.8rem;
+   outline: none;
+}
+
+.woocommerce .button:hover,
+.woocommerce .submit:hover {
+   background: #808080 !important;
+}
+
+.woocommerce a.button {
+   padding: 0.8rem;
+}
+
+.woocommerce a.checkout-button {
+   padding: 0.8rem !important;
+}
+
+.woocommerce .input-text {
+   padding: 0.5rem !important;
+}
+
+.woocommerce .products {
+   margin: 0 !important;
+}
+
+.woocommerce .products .product {
+   margin: 0 !important;
+   padding: 1rem !important;
+   width: 100% !important;
+}
+
+.woocommerce .woocommerce-LoopProduct-link {
+   color: #555555;
+}
+
+.woocommerce .woocommerce-Price-amount {
+   color: #555555;
+}
+
+.woocommerce .products .star-rating {
+   display: none;
+}
+
+.woocommerce .woocommerce-result-count {
+   display: none;
+}
+
+.woocommerce .woocommerce-ordering {
+   float: none;
+   margin: 0;
+}
+
+.woocommerce .summary {
+   text-align: justify;
+}
+
+.woocommerce .woocommerce-tabs {
+   text-align: justify;
+}
+
+.woocommerce .star-rating {
+   color: #555555;
+}
+
+.woocommerce .comment-reply-title {
+   color: #555555;
+}
+
+.woocommerce .coupon .input-text {
+   width: 150px !important;
+}
+
+.woocommerce .cart_totals {
+   width: 100% !important;
+}
+
+.woocommerce .cart_totals h2 {
+   text-align: center;
+}
+
+.woocommerce .checkout-button {
+   display: inline-block !important;
+   font-size: 100% !important;
+}
+
+.woocommerce .col-1,
+.woocommerce .col-2 {
+   max-width: none;
+   padding: 0;
+   margin: 0;
+}
+
+.woocommerce .col2-set {
+   margin-bottom: 1rem;
+}
+
+.woocommerce .form-row {
+   display: block;
+}
+
+.woocommerce .woocommerce-info,
+.woocommerce .woocommerce-error,
+.woocommerce .woocommerce-message {
+   color: #555555;
+   background: #f7f7f7;
+   padding: 1rem 2rem 1rem 4rem;
+   margin: 0 0 1rem;
+}
+
+.woocommerce .products img {
+   margin: 0 !important;
+}
+
+.woocommerce .products .button {
+   margin: 0 !important;
+}
+
+.woocommerce .product .images,
+.woocommerce .product .summary {
+   margin-bottom: 1.5rem !important;
+}
+
+.woocommerce .flex-control-thumbs li {
+   margin-top: 0.3rem !important;
+   margin-right: 0.4rem !important;
+}
+
+.woocommerce .woocommerce-product-rating {
+   margin-bottom: 0.3rem !important;
+}
+
+.woocommerce .product .cart {
+   margin-bottom: 1rem !important;
+}
+
+.woocommerce .product .tabs {
+   margin-bottom: 1rem !important;
+}
+
+.woocommerce .product .panel {
+   margin-bottom: 1.5rem !important;
+}
+
+.woocommerce .checkout-button {
+   margin: 0 !important;
+}
+
+.woocommerce .woocommerce-order {
+   text-align: center;
+}
+
+.woocommerce .woocommerce-order-overview {
+   margin-bottom: 1rem !important;
+}
+
+.woocommerce .woocommerce-order-details {
+   margin-bottom: 1rem !important;
+}
+
+.woocommerce ul.order_details li {
+   float: none;
+   border: none;
+   display: inline-block;
+   padding: 1rem;
+   margin: 0 1rem;
+}
+
+.woocommerce .woocommerce-form-register,
+.woocommerce .woocommerce-form-login {
+   margin: 1rem 0 !important;
+}
+
+.woocommerce h2 {
+   text-align: center;
+}
+
+.woocommerce .variations {
+   width: 0% !important;
+   margin-bottom: 1rem !important;
+   margin: 0;
+   padding: 0;
+}
+
+.woocommerce .variations label {
+   font-weight: normal !important;
+   color: #333333;
+}
+
+.woocommerce .reset_variations {
+   display: none !important;
+}
+
+.woocommerce .sku_wrapper {
+   display: none;
+}
+
+.woocommerce .cross-sells {
+   width: 100% !important;
+   text-align: center;
+}
+
+.woocommerce .orderby {
+   padding: 0.2rem;
+}
+
+.woocommerce .woocommerce-checkout-payment {
+   background: #f7f7f7 !important;
+}
+
+.woocommerce .payment_box {
+   background: #e7e7e7 !important;
+   color: #555555 !important;
+}
+
+.woocommerce-password-strength {
+   height: auto;
+}
+
+.woocommerce-customer-details address {
+   border-width: 1px !important;
+}
+
+.woocommerce-message .button {
+   outline: none;
+}
+
+.learnpress .learn-press-courses {
+   margin: 0 !important;
+}
+
+.learnpress .learn-press-courses .course {
+   margin: 0 !important;
+   padding: 1rem !important;
+}
+
+.learnpress .lp-archive-courses {
+   text-align: center;
+}
+
+.learnpress .course-thumbnail {
+   margin: 0 !important;
+}
+
+.learnpress .course-thumbnail img {
+   width: 100%;
+   height: 100%;
+}
+
+.learnpress .course-title {
+   margin: 0 !important;
+   font-weight: 700 !important;
+   line-height: inherit !important;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+}
+
+.learnpress .course-title a,
+.learnpress .course-permalink {
+   color: #333333 !important;
+   text-decoration: none !important;
+}
+
+.learnpress .course-price {
+   float: none !important;
+}
+
+.learnpress .course-instructor {
+   display: none !important;
+}
+
+.learnpress .learn-press-breadcrumb {
+   margin-bottom: 1rem !important;
+}
+
+.learnpress .learn-press-search-course-form {
+   margin-bottom: 1rem !important;
+}
+
+.learnpress .search-course-input {
+   width: auto !important;
+   padding: 0.2rem !important;
+}
+
+.learnpress .search-course-button {
+   position: inherit !important;
+   line-height: inherit !important;
+   padding: 0.2rem !important;
+   right: 0 !important;
+   bottom: 0 !important;
+   top: 0 !important;
+}
+
+.learnpress .lp-form button,
+.learnpress .learn-press-form button,
+.learnpress .current-user button,
+.learnpress .enroll-course button,
+.learnpress .start-quiz button,
+.learnpress .purchase-course button {
+   color: #555555 !important;
+   background: #d3d3d3 !important;
+   padding: 0.8rem !important;
+   line-height: 1 !important;
+   height: inherit !important;
+   border-radius: 100px;
+   transition: all 0.5s;
+   font-weight: 700;
+   outline: none;
+}
+
+.learnpress .lp-form button:hover,
+.learnpress .learn-press-form button:hover,
+.learnpress .current-user button:hover,
+.learnpress .enroll-course button:hover,
+.learnpress .start-quiz button:hover,
+.learnpress .purchase-course button:hover {
+   background: #a3a3a3 !important;
+}
+
+.learnpress input {
+   outline: none;
+}
+
+.learnpress .course-nav a {
+   text-decoration: none;
+}
+
+.learnpress .toggle-content-item {
+   color: #555555 !important;
+}
+
+.learnpress #course-item-content-header {
+   background: #f7f7f7 !important
+}
+
+.learnpress .comment-respond {
+   text-align: center;
+}
+
+.learnpress #learn-press-profile-content {
+   text-align: center !important;
+}
+
+.learnpress #learn-press-profile-header,
+.learnpress #learn-press-profile-nav {
+   background: #f7f7f7 !important;
+}
+
+.learnpress #learn-press-profile-nav:before {
+   background: #f7f7f7 !important;
+}
+
+.learnpress #learn-press-profile-nav a {
+   color: inherit !important;
+}
+
+.learnpress #learn-press-profile-nav a:hover {
+   background: #d3d3d3 !important;
+}
+
+.learnpress #learn-press-profile-nav .active a {
+   background: #d3d3d3 !important;
+}
+
+.learnpress #profile-mobile-menu {
+   background: #f7f7f7 !important;
+}
+
+.learnpress .learn-press-tabs {
+   background: #f7f7f7 !important;
+   color: inherit !important;
+   z-index: 100;
+}
+
+.learnpress .learn-press-tabs a:hover {
+   background: #d3d3d3 !important;
+}
+
+.learnpress .profile-tab-sections {
+   background: #f7f7f7 !important;
+   padding: 0 !important;
+}
+
+.learnpress .profile-tab-sections a {
+   background: #f7f7f7 !important;
+}
+
+.learnpress .lp-tab-sections {
+   background: #f7f7f7 !important;
+   margin-left: 0 !important;
+   padding-left: 0 !important;
+}
+
+.learnpress .lp-tab-sections a {
+   color: inherit !important;
+   text-decoration: none;
+}
+
+.learnpress .lp-sub-menu {
+   margin-left: 0 !important;
+   padding-left: 0 !important;
+}
+
+.learnpress .lp-list-table th {
+   color: inherit !important;
+   background: #f7f7f7 !important;
+}
+
+.learnpress .lp-tab-sections .publicity {
+   display: none;
+}
+
+.learnpress .tabs .publicity {
+   display: none;
+}
+
+.learnpress .tabs .orders {
+   display: none;
+}
+
+.learnpress .course-description iframe,
+.learnpress .lesson-description iframe {
+   width: 100%;
+   border: none;
+}
+
+@media screen and (max-width: 992px) {
+
+   body {
+      color: #333333;
+      background: #ffffff;
+      font-family: 'Lato', sans-serif;
+      font-size: 0.8rem;
+      margin: 0;
+      padding: 0;
+   }
+
+   .std h1 {
+      font-size: 1.9rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+   }
+
+   .std h2 {
+      font-size: 1.3rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+   }
+
+   .std h3 {
+      font-size: 1.2rem;
+   }
+
+   .std h4 {
+      font-size: 1.1rem;
+   }
+
+   .std h5 {
+      font-size: 1.1rem;
+      color: #555555;
+   }
+
+   .std p {
+      font-size: 1rem;
+      color: #555555;
+   }
+
+   .small h1 {
+      font-size: 1.7rem;
+   }
+
+   .small h3 {
+      font-size: 1.1rem;
+   }
+   
+   .content ul,
+   .content ol {
+      font-size: 1.0rem;
+      margin-bottom: 0.7rem;
+      margin-left: 0.7rem;
+      padding-left: 0.7rem;
+   }
+
+   .navbar-brand {
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #444444 !important;
+      cursor: pointer;
+   }
+
+   .nav-link {
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #444444 !important;
+      cursor: pointer;
+   }
+
+   .navbar-nav .nav-link {
+      padding: 0.5rem 1rem;
+   }
+
+   .dropdown-item {
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #444444 !important;
+      padding: 0.5rem 1rem;
+   }
+
+   .btn {
+      font-size: 1rem;
+      padding: 0.4rem 0.8rem;
+   }
+   
+   .text {
+      text-align: left;
+   }
+
+   .carousel-caption {
+      top: 18%;
+   }
+
+   #course-item-content-header .course-item-search {
+      display: none;
+   }
+
+   #course-item-content-header .course-title {
+      font-size: 1rem !important;
+   }
+
+   #course-item-content-header .button {
+      padding: 0.5rem !important;
+   }
+
+}
