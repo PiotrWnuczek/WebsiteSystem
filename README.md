@@ -1,4 +1,4 @@
-# WebsiteSystem
+# Website System
 
 ### System for creating and managing websites. The project is based on WordPress and ReduxFramework, it also integrates WooCommerce and the Elementor creator.
 
